@@ -1,0 +1,82 @@
+.tehnics {
+    padding: 16px 0;
+    transition: 0.7s;
+
+    @media (min-width: 768px) {
+        padding: 24px 0;
+    }
+
+    @media(min-width: 768px) {
+        height: 153px;
+    }
+
+    &__list {
+        padding: 0 0 24px 0;
+
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            column-gap: 32px;
+            row-gap: 16px;
+            column-gap: 24px;
+            padding: 0;
+        }
+    }
+
+    &-item {
+        font-family: $font-medium;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: $color-main-text;
+        background: $color-bg;
+        border: 1px solid $color-bg-two;
+        border-radius: 6px;
+        height: 128px;
+        flex-basis: 206px;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        justify-content: space-between;
+        flex-grow: 1;
+        cursor: pointer;
+
+        @media (min-width: 768px) {
+            flex-basis: 190px;
+        }
+
+        @media (min-width: 1120px) {
+            flex-basis: 206px;
+        }     
+    }
+
+    .tehnics-item:hover {
+        transition: all 0.5s;
+        opacity: 0.5;
+    }
+
+    @media (min-width: 768px) {
+        &__button {
+            padding: 0;
+        }
+    }
+}
+
+.select-icon--place {
+    align-self: flex-end;
+}
+
+.tehnics__container.active .tehnics {
+    @media(min-width: 768px) {
+        height: 330px;
+    }
+}
+
+.tehnics__container.active .show-button__img {
+    background-image: url("assets/images/expand.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+}

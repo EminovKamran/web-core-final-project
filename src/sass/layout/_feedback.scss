@@ -1,0 +1,39 @@
+.feedback {
+    position: fixed;
+    top: 0;
+    width: 288px;
+    height: 100%;
+    background-color: #FFFFFF;
+    z-index: 2;
+    right: -225%;
+    transition: 0.7s;
+    padding: 24px 16px 0 16px;
+    
+    @media (min-width: 768px) {
+        width: 376px;
+        padding: 0 32px 0 32px;
+
+        :first-child.button {
+            position: absolute;
+            left: -70px;
+            top: 35px;
+        }
+    }
+    
+    &__input-item {
+        width: 288px;
+        height: 48px;
+        border: 1px solid #EAEAEA;
+        border-radius: 8px;
+        background-color: #FFFFFF;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #B5B6BC;
+        font-family: $font-regular;
+
+        @media (min-width: 768px) {
+            width: 376px;
+        }
+    }
+}    

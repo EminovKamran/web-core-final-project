@@ -1,0 +1,80 @@
+.form-title {
+    margin: 0;
+    padding: 40px 0 24px 0px;
+    font-family: $font-bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color: $color-main-text;
+}
+
+.form-description {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 16px 32px 0 0px;
+    gap: 16px;
+
+    &__text {                
+        font-family: $font-medium;
+        font-size: 14px;
+        line-height: 16px;
+        color: $color-nav-text;
+        margin: 0;
+    }
+    &__important {
+        color: $color-icon; 
+    }
+    &__button {
+        align-self: end;
+    }
+}
+.order-call {
+    position: fixed;
+    top: 0;
+    width: 288px;
+    height: 100%;
+    background-color: $color-bg;
+    z-index: 2;
+    right: -225%;
+    transition: 0.7s;
+    padding: 24px 16px 0 16px;
+    
+    @media (min-width: 768px) {
+        width: 376px;
+        padding: 0 32px 0 32px;
+
+        :first-child.button {
+            position: absolute;
+            left: -70px;
+            top: 35px;
+        }
+    }
+
+    &__input-item {
+        width: 288px;
+        height: 48px;
+        border: 1px solid $color-bg-two;
+        border-radius: 8px;
+        background-color: $color-bg;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #B5B6BC;
+        font-family: $font-regular;
+
+        @media (min-width: 768px) {
+            width: 376px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        
+        :last-child .order-call__input-item {
+            height: 118px;
+        }
+    }
+}

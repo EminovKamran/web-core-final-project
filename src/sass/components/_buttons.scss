@@ -1,0 +1,144 @@
+.button {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: none;
+    border: none;
+    padding: 0;
+
+    &__icon {
+        background: $color-icon;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        transition: all 0.5s;
+
+        &--margin {
+            margin-right: 16px;
+        }
+    }
+
+    &__icon:hover {
+        background-color: $color-bg-icon-hover;
+        cursor: pointer;
+    }
+
+    &__text {
+        font-family: $font-regular;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: $color-main-text;
+    }
+
+    &__text:hover {
+        color: $color-bg-icon-hover;
+        cursor: pointer;
+    }
+}
+
+.show-button {
+    text-decoration: none;
+    font-family: $font-medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $color-main-text;
+    background: none;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    transition: all 0.5s;
+    align-items: center;
+    gap: 8px;
+
+    @media (min-width: 768px) {
+        display: flex;
+    }
+
+    &__img {
+        background-image: url("assets/images/icon.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 24px;
+        height: 24px;
+    }
+
+    &:hover {
+        color: $color-nav-text;
+    }
+}
+
+@media (max-width: 767px) {
+    .brands-container__button {
+        display: none;
+    }
+    .tehnics__button {
+        display: none;
+    } 
+}
+.price__icon {
+    background-image: url("assets/images/drop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 7px;
+    height: 10px;
+}
+.price__button {
+    background: $color-icon;
+    border-radius: 16px;
+    border: none;
+    font-family: $font-medium;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    color: $color-bg;
+    display: flex;
+    align-items: center;
+    width: 119px;
+    height: 32px;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 17%;
+    right: 8%;
+    cursor: pointer;
+    transition: all 0.5s;
+    
+    @media (min-width: 768px) {
+        position: static;
+    }
+}
+
+.price__button:hover {
+    background: $color-bg-icon-hover;
+}
+
+.form-description__button {
+    background: $color-icon;
+    border-radius: 16px;
+    border: none;
+    font-family: $font-medium;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    color: $color-bg;
+    display: flex;
+    align-items: center;
+    width: 119px;
+    height: 32px;
+    justify-content: space-evenly;
+}
+.form-description__icon {
+    background-image: url("assets/images/drop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 7px;
+    height: 10px;
+}
