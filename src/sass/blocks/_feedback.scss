@@ -1,6 +1,11 @@
 .feedback {
     @include modalWindow;
     
+    &__container {
+        overflow: auto;
+        max-height: 100%;
+    }
+    
     @media (min-width: 768px) {
         width: 376px;
         padding: 0 32px 0 32px;
@@ -13,19 +18,6 @@
     }
     
     &__input-item {
-        width: 288px;
-        height: 48px;
-        border: 1px solid #EAEAEA;
-        border-radius: 8px;
-        background-color: #FFFFFF;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        color: #B5B6BC;
-        font-family: $font-regular;
-
-        @media (min-width: 768px) {
-            width: 376px;
-        }
+        @include modal-window-input;
     }
 }    

@@ -43,21 +43,13 @@
         }
     }
 
-    &__input-item {
-        width: 288px;
-        height: 48px;
-        border: 1px solid $color-bg-two;
-        border-radius: 8px;
-        background-color: $color-bg;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        color: #B5B6BC;
-        font-family: $font-regular;
+    &__container {
+        overflow: auto;
+        max-height: 100%;
+    }
 
-        @media (min-width: 768px) {
-            width: 376px;
-        }
+    &__input-item {
+        @include modal-window-input;
     }
 
     &__wrapper {
