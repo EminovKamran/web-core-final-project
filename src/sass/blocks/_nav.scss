@@ -1,0 +1,40 @@
+.nav {
+    margin-top: 25px;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        @include reset-list;
+    }
+
+    &__item, 
+    &__link {
+        text-decoration: none;
+        font-family: $font-regular;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: $color-main-text;
+        transition: all 0.3s;
+
+        &:hover {
+            color: $color-nav-text;
+        }
+    }
+
+    &__link--active {
+        color: $color-nav-text;
+    }
+
+    &__link--active::before {
+        content: "";
+        width: 4px;
+        height: 29px;
+        background: $color-active-link;
+        display: inline-block;
+        border-radius: 0 9px 9px 0;
+        margin-left: -21px;
+        position: absolute;
+    }
+}

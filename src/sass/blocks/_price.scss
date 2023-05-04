@@ -1,5 +1,6 @@
 .price {
     &__list {
+        @include reset-list;
         height: 200px;
         display: flex;
         flex-direction: column;
@@ -9,6 +10,13 @@
         background: $color-bg;
         border-radius: 6px;
         padding: 16px 8px;
+        font-family: $font-medium;
+        color: #1B1C21;;
+    }
+
+    &__title {
+        @include reset-list;
+        @include title;
     }
 
     &__other {
@@ -57,8 +65,9 @@
         left: 110px;
     }
 
-    &__title {
+    &__check {
         display: none;
+        @include reset-list;
     }
 
     &__container {
@@ -66,6 +75,7 @@
 
         @media (min-width: 768px) {
             padding: 0;
+            margin: 24px 0 0 0;
         }
     }
 
@@ -97,13 +107,13 @@
             max-width: 421px;
         }
 
-        &__title {
+        &__check {
             display: flex;
-            padding: 24px 0 16px 24px;
+            padding: 24px 0 16px 40px;
             gap: 13%;
 
             @media (min-width: 1250px) {
-                padding: 32px 0 16px 32px;
+                padding: 32px 0 16px 56px;
             }
 
             :first-child.price__label {

@@ -88,21 +88,7 @@
     height: 10px;
 }
 .price__button {
-    background: $color-icon;
-    border-radius: 16px;
-    border: none;
-    font-family: $font-medium;
-    font-size: 12px;
-    line-height: 24px;
-    text-align: right;
-    letter-spacing: -0.15px;
-    text-transform: uppercase;
-    color: $color-bg;
-    display: flex;
-    align-items: center;
-    width: 119px;
-    height: 32px;
-    justify-content: space-evenly;
+    @include button;
     position: absolute;
     bottom: 17%;
     right: 8%;
@@ -119,22 +105,13 @@
 }
 
 .form-description__button {
-    background: $color-icon;
-    border-radius: 16px;
-    border: none;
-    font-family: $font-medium;
-    font-size: 12px;
-    line-height: 24px;
-    text-align: right;
-    letter-spacing: -0.15px;
-    text-transform: uppercase;
-    color: $color-bg;
-    display: flex;
-    align-items: center;
-    width: 119px;
-    height: 32px;
-    justify-content: space-evenly;
+    @include button;
 }
+
+.form-description__button:hover {
+    background: $color-bg-icon-hover;
+}
+
 .form-description__icon {
     background-image: url("assets/images/drop.svg");
     background-repeat: no-repeat;

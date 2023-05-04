@@ -1,0 +1,23 @@
+.lang {
+    &__list {
+        display: flex;
+        gap: 7px;
+        font-family: $font-regular;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: $color-main-text;
+        @include reset-list;
+    }
+    &__item--active {
+        color: $color-nav-text;
+    }
+    
+    &__item {
+        cursor: pointer;
+    }
+    
+    &__item:hover {
+        color: $color-nav-text;
+    }
+}

@@ -1,11 +1,11 @@
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { swiperRun } from './components/swiper'
-import { viewSlider, viewSliderTehnics } from './components/showHeight'
+import { swiperRun } from './js/swiper'
+import { viewSlider, viewSliderTehnics } from './js/showHeight'
 import './index.html';
-import './components/button.js'
-import './main.scss';
+import './js/button.js'
+import './main.scss';   
 
 swiperRun()  
 

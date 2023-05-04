@@ -1,10 +1,20 @@
 .main {
     &__container {
         padding: 24px 0 40px 0;
-    }
 
-    &__top {
-        margin: 0 0 24px 0;
+        &-box {
+            @media (min-width: 650px) {
+                padding: 0 24px 0 16px;
+            }
+
+            @media (min-width: 768px) {
+                padding: 0 24px 0 24px;
+            }
+
+            @media (min-width: 1250px) {
+                padding: 0 24px 0 32px;
+            }
+        }
     }
 
     &-description__about {
@@ -98,15 +108,6 @@
         &-description {
             display: flex;
             justify-content: space-between;
-            padding: 0 24px 0 16px;
-
-            @media (min-width: 768px) {
-                padding: 0 24px 0 24px;
-            }
-
-            @media (min-width: 1250px) {
-                padding: 0 24px 0 32px;
-            }
         }
 
         &__container {

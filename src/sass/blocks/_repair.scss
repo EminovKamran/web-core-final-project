@@ -1,16 +1,27 @@
-.tehnics {
-    padding: 16px 0;
-    transition: 0.7s;
-
-    @media (min-width: 768px) {
-        padding: 24px 0;
+.repair {
+    &__title {
+        @include reset-list;
+        @include title;
     }
+
+    &__wrapper {
+        padding: 16px 0;
+
+        @media (min-width: 768px) {
+            padding: 24px 0;
+        }
+    }
+}
+
+.tehnics {
+    transition: 0.7s;
 
     @media(min-width: 768px) {
         height: 153px;
     }
 
     &__list {
+        @include reset-list;
         padding: 0 0 24px 0;
 
         @media (min-width: 768px) {
@@ -20,7 +31,6 @@
             column-gap: 32px;
             row-gap: 16px;
             column-gap: 24px;
-            padding: 0;
         }
     }
 

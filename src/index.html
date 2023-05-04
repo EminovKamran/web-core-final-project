@@ -23,16 +23,16 @@
                         </span>
                     </button>
                 </div>
-                <nav class="aside-nav">
-                    <ul class="aside__list">
-                        <li class="aside__item"><a class="aside__link" href="#">Ремонт техники</a></li>
-                        <li class="aside__item"><a class="aside__link aside__link--active" href="#">Услуги и сервисы</a></li>
-                        <li class="aside__item"><a class="aside__link" href="#">Корпоративным клиентам</a></li>
-                        <li class="aside__item"><a class="aside__link" href="#">Продавцам техники</a></li>
-                        <li class="aside__item"><a class="aside__link" href="#">Партнерам</a></li>
-                        <li class="aside__item"><a class="aside__link" href="#">Производителям</a></li>
-                        <li class="aside__item"><a class="aside__link" href="#">Наши сервисные центры</a></li>
-                        <li class="aside__item"><a class="aside__link" href="#">Контакты</a></li>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#">Ремонт техники</a></li>
+                        <li class="nav__item"><a class="nav__link nav__link--active" href="#">Услуги и сервисы</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Корпоративным клиентам</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Продавцам техники</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Партнерам</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Производителям</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Наши сервисные центры</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="aside-contact">
@@ -60,13 +60,13 @@
                         </li>
                     </ul>
                 </div>
-                <a class="aside-email" href="mailto:mail@cps.com">mail@cps.com</a>
-                <a class="aside-number" href="tel:88008908900">8 800 890 8900</a>
-                <div class="aside-lang">
-                    <ul class="aside-lang__list">
-                        <li class="aside-lang__item aside-lang__item--active">RU</li>
-                        <li class="aside-lang__item">EN</li>
-                        <li class="aside-lang__item">CH</li>
+                <a class="email" href="mailto:mail@cps.com">mail@cps.com</a>
+                <a class="number" href="tel:88008908900">8 800 890 8900</a>
+                <div class="lang">
+                    <ul class="lang__list">
+                        <li class="lang__item lang__item--active">RU</li>
+                        <li class="lang__item">EN</li>
+                        <li class="lang__item">CH</li>
                     </ul>
                 </div>
             </aside>
@@ -139,7 +139,7 @@
                                 </div>
                             </div>
                             <nav class="menu">
-                                <ul class="menu__list">
+                                <ul class="menu__list menu__wrapper">
                                     <li class="menu__item"><a class="menu__link menu__link--active" href="#">Ремонтируемые бренды</a></li>
                                     <li class="menu__item"><a class="menu__link" href="#">Дополнительные услуги</a></li>
                                     <li class="menu__item"><a class="menu__link" href="#">Цены на услуги</a></li>
@@ -148,7 +148,7 @@
                                     <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
                                 </ul>
                             </nav>
-                            <section class="main-description">
+                            <section class="main-description main__container-box">
                                 <div class="main-description__container">
                                     <p class="main-description__about">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
                                         Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
@@ -171,9 +171,9 @@
                                 </picture>
                             </section>
                             <section class="brands">
-                                <h3 class="title">Ремонт техники различных брендов</h3>
+                                <h3 class="title brands__title">Ремонт техники различных брендов</h3>
                                 <div class="brands-container main__container-wrapper">
-                                    <div class="swiper cards">
+                                    <div class="swiper cards brands__wrapper">
                                         <ul class="swiper-wrapper cards__list">
                                             <li class="swiper-slide card">
                                                 <img class="card__img" src="./assets/images/lenovo.png" alt="lenovo-img">
@@ -230,9 +230,9 @@
                                 </div>
                             </section>
                             <section class="repair">
-                                <h3 class="title">Ремонт техники различных брендов</h3>
+                                <h3 class="title repair__title">Ремонт техники различных брендов</h3>
                                 <div class="tehnics__container main__container-wrapper">
-                                    <div class="swiper tehnics">
+                                    <div class="swiper tehnics repair__wrapper">
                                         <ul class="swiper-wrapper tehnics__list">
                                             <li class="swiper-slide tehnics-item">
                                                 Ремонт ноутбуков
@@ -268,8 +268,8 @@
                                 </div>
                             </section>
                             <section class="price">
-                                <h3 class="title">Цены на услуги</h3>
-                                <ul class="price__title">
+                                <h3 class="title price__title">Цены на услуги</h3>
+                                <ul class="price__check">
                                     <li class="price__label">Ремонтные услуги</li>
                                     <li class="price__label">Цена</li>
                                     <li class="price__label">Срок</li>
@@ -367,7 +367,7 @@
                     </div>
                 </main>
                 <footer class="footer">
-                        <ul class="footer__list">
+                        <ul class="footer__list footer__wrapper">
                             <li class="footer__item">© 2019 CPS <br> Разработано командой Apesong</li>
                             <li class="footer__item">Политика конфиденциальности</li>
                             <li class="footer__item">Информация, размещенная на данной странице, не является публичной офертой</li>

@@ -1,0 +1,79 @@
+.aside {
+    position: fixed;
+    transform: translateX(-225%);
+    transition: 0.7s;
+    overflow-y: scroll;
+    display: flex;
+    height: 100vh;
+    z-index: 5;
+    width: 320px;
+    flex-direction: column;
+    background: #FFFFFF;
+    padding-left: 22px;
+
+    &__logo {
+        max-width: 290px;
+        padding: 16px 16px 16px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (min-width: 768px) {
+            padding: 16px 24px 16px 0;
+        }
+    }
+
+    &-contact__list {
+        @include reset-list;
+        display: flex;
+        gap: 16px;
+        margin: 32px 0 16px 0;
+
+        @media (min-width: 650px) {
+            margin: 268px 0px 16px 0;
+        }
+    }
+
+    &__logo--elem::before {
+        display: none;
+    }
+
+    &-lang__item--active {
+        color: $color-nav-text;
+    }
+
+    &-lang__item {
+        cursor: pointer;
+    }
+
+    &-lang__item:hover {
+        color: $color-nav-text;
+    }
+
+    @media (min-width: 1250px) {
+        display: flex;
+        background: $color-bg;
+        padding-left: 22px;
+        width: 50%;
+        height: auto;
+        transform: translate(0%);
+        position: relative;
+        transition: 0s;
+
+        &__logo {
+            display: flex;
+            padding: 36px 29px 22px 0;
+            max-width: 290px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__logo > .button:first-child .button__icon {
+            display: none;
+        }
+
+        &__logo {
+            max-width: 320px;
+        }
+    }    
+}

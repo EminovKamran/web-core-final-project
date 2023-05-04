@@ -1,0 +1,14 @@
+.email {
+    cursor: pointer;
+    transition: all 0.5s;
+    text-decoration: none;
+    font-family: $font-regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $color-main-text;
+
+    &:hover {
+        color: $color-nav-text;
+    }
+}
